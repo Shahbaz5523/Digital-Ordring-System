@@ -1,0 +1,136 @@
+.orderContainer{
+    display: flex;
+    flex-wrap: wrap;    
+    align-items: center;
+    justify-content: space-between;
+}
+/* @font-face {
+    font-family:"caranda" ;
+    src: url("https://www.fontspace.com/caranda-font-f30726");
+    font-size: normal;
+    
+} */
+.card-main{
+    width: 80%;
+    color: teal;
+    color: #49321c;
+    padding: 12px; 
+    margin: 5px auto;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    /* font-family: "Poppins", sans-serif !important; */
+    font-family: 'Mate SC', serif;
+    /* font-family: 'Abril Fatface', cursive; */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.123);
+}
+.card-main h2{
+    text-align: center;
+}
+.card-main h2 span{
+    vertical-align: middle;
+}
+.card-main h2 img{
+    width: 35px;
+    vertical-align: middle;
+}
+.card-main h3 img{
+    width: 45px;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+.card-main h3 span{
+    vertical-align: middle;
+}
+.orderContainer{
+    display: flex;
+}
+.card-main button{
+    width: 120px;
+    margin: 5px;
+    padding: 5px;
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+    /* letter-spacing: 1px; */
+    border-radius: 10px;
+    transition: 0.5s;
+    border: 2px solid #49321c;
+    background-color: #49321c;
+}
+.card-main button:hover{
+    color: #49321c;
+    cursor: pointer;
+    background-color: transparent;
+}
+.card-main button span{
+    vertical-align: middle;
+}
+.card-main button img{
+    width: 35px;
+    vertical-align: middle;
+}
+.orderContainer table{
+    width: 100%;
+    margin: 5px;
+    color: white;
+    font-size: larger;
+}
+.orderContainer table tr:hover{
+    opacity: 0.7;
+    cursor: pointer;
+    background-color: rgba(73, 50, 28, 0.534);
+}
+.orderContainer table tr.table-head{
+    opacity: 1;
+}
+.orderContainer table tr td{
+    padding: 5px 10px;
+    color: #49321c;
+    border-radius: 5px;
+    border:1px solid rgba(73, 50, 28, 0.467);
+    background-color: rgba(255, 255, 255, 0.849);
+    border-right:1px solid rgba(73, 50, 28, 0.467);
+    border-bottom:1px solid rgba(73, 50, 28, 0.467);
+    text-transform: uppercase;
+    
+}
+.item-head{
+    width: 60%;
+    color: white !important;
+    background-color: #49321c !important;
+}
+.item-qty , .item-size{
+    color: white !important;
+    background-color: #49321c !important;
+}
+
+.table-head{
+    text-align: center;
+    font-weight: bolder;
+}
+@media screen and (max-width:900px) {
+    .orderContainer{
+        flex-wrap: wrap;
+    }
+    .card-main{
+        width:90% !important;
+    }
+}
+@media screen and (max-width:500px){
+    .orderContainer{
+        display: block;}
+
+    .card-main{
+        width: 80vw;   
+    }
+    .card-main button {
+        padding: 3px;
+        width: 30vw;
+        font-size: medium;
+    }
+    .orderContainer table tr td{
+        padding: 5px;
+        font-size: medium;
+       
+    }
+}

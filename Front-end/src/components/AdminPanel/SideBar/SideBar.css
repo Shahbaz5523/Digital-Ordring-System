@@ -1,0 +1,173 @@
+
+.adminwrapper{
+   display: flex;
+   position: relative;
+   font-family:"Poppins", sans-serif !important ;
+ }
+ .adminwrapper .adminsidebar {
+   width: 200px;
+   height: 100%;
+   color: white;
+   /* background-color: black; */
+   background-color: #40916c;
+   /* font-family:"Poppins", sans-serif !important ; */
+   font-weight: bolder;
+   /* background-color: rgba(0, 0, 0, 0.171); */
+   /* background-color: rgba(0, 0, 0, 0.397); */
+   padding: 30px 0px;
+   position: fixed;
+   left: 0;
+ }
+ .adminsidebar ul{
+   margin-left: 0px;
+   padding-left: 40px;
+ }
+ .adminsidebar ul li button{
+    /* background-color: rgba(0, 0, 0, 0.171); */
+    /* background-color: rgba(0, 0, 0, 0.397); */
+    font-weight: bolder;
+    background: none;
+	  color: inherit;
+	  border: none;
+	  padding: 0;
+  	font: inherit;
+   	cursor: pointer;
+	  outline: inherit;
+ }
+ 
+ .adminsidebar h2{
+   color: #fff;
+   text-transform: uppercase;
+   text-align: center;
+   margin-bottom: 30px;
+ }
+ 
+ .adminsidebar  ul li {
+   list-style: none;
+   color: white;
+   padding: 15px;
+   border-bottom: 1px solid #fff;
+ }
+ .adminsidebar ul li:hover{
+   color: white;
+   background-color: aliceblue;
+   color: #49321c;
+
+ }
+ .adminlist{
+   margin-left: 40px;
+ }
+ input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+  .adminwrapper{
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+.adminwrapper .adminsidebar {
+  top: 16%;
+  left: 20px;
+  height: 80%;
+  width: 80px;
+  display: flex;
+  position: fixed;
+  font-weight: bolder;
+  border-radius: 10px;
+  align-items: center;
+  transition: all 0.8s;
+  flex-direction: column;
+  background-color: white;
+  justify-content: space-evenly;
+  box-shadow: 0px 0px 20px 0px rgba(46, 44, 44, 0.24);
+}
+.adminsidebar a {
+  display: flex;
+  color: #49321c;
+  font-size: 2.4rem;
+  position: relative;
+  align-items: center;
+  justify-self: center;
+}
+.adminsidebar a div {
+  top: 10px;
+  opacity: 0;
+  right: -115px;
+  transition: 0.5s;
+  font-size: medium;
+  visibility: hidden;
+  position: absolute;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px rgba(46, 44, 44, 0.24);
+}
+.adminsidebar a div::before {
+  top: 48%;
+  left: -8px;
+  content: "";
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  border-radius: 2px;
+  background-color: white;
+  transform: rotate(45deg) translateY(-50%);
+}
+.adminsidebar a div.reviews,
+.adminsidebar a div.table {
+  right: -145px;
+}
+.adminsidebar a div.dishes {
+  right: -155px;
+}
+.adminsidebar a:hover div {
+  opacity: 1 !important;
+  visibility: visible;
+  transform: translateY(-5px);
+}
+.adminsidebar a img {
+  width: 2.4rem;
+}
+@media screen and (max-width: 768px) {
+  .adminwrapper .adminsidebar {
+    right: 0;
+    width: 90%;
+    bottom: -72%;
+    height: 70px;
+    margin: auto;
+    z-index: 999;
+    position: fixed;
+    left: 0 !important;
+    flex-direction: row;
+    align-items: center !important;
+  }
+  .adminsidebar a div {
+    right: -15px;
+    font-size: small;
+    text-align: center;
+    top: -63px !important;
+  }
+  .adminsidebar a div.table,
+  .adminsidebar a div.dishes {
+    right: -18px;
+    top: -78px !important;
+  }
+  .adminsidebar a div.reviews {
+    right: -35px;
+  }
+  .adminsidebar a div::before {
+    top: 93%;
+    left: 35%;
+    transform: rotate(45deg) translateY(-50%);
+  }
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+
+}

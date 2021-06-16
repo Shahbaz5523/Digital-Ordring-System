@@ -1,0 +1,32 @@
+.cardContainer{
+    width: 100%;
+    padding: 30px;
+    background-color: white;
+}
+.cardContainer fieldset{
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.445);
+}
+.cardContainer fieldset legend{
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: 'Poppins';
+}
+
+/* responsive */
+
+@media screen and (max-width:370px){
+    .cardContainer{
+        padding: 5px;
+        padding-top: 20px;
+    }
+    .cardContainer fieldset legend{
+        margin-left: 20px;
+        font-size: large !important;
+    }
+}

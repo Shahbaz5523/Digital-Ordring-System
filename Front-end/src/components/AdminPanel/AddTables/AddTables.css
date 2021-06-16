@@ -1,0 +1,129 @@
+.AddTable_form{
+  margin: 35px 0px;
+  background: #fff;
+  text-align: center;
+  border-radius: 10px;
+  width: 450px !important;
+  height: 500px !important;
+  padding: 55px 55px 33px 55px;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 5px 10px 0px rgb(0 0 0 / 10%);
+}
+.AddTable_form h1 {
+  color: #333;
+  font-size: 30px;
+  font-weight: bolder;
+}
+.AddTable_form input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: #555555;
+  padding: 0.5rem 0;
+  font-family: "Poppins", sans-serif;
+  border-bottom: 2px solid #636060;
+}
+.AddTable_form .form-control {
+  width: 100%;
+  text-align: left;
+  margin: 50px 0px;
+  position: relative;
+}
+.adminform-control label {
+  top: 0;
+  left: 0;
+  width: 100%;
+  cursor: text;
+  color: #636060;
+  position: absolute;
+  transition: 0.2s all;
+}
+.adminform-control input:focus,
+.adminform-control input:valid {
+  border-color: #333;
+}
+.adminform-control input:focus ~ label,
+.adminform-control input:valid ~ label {
+  top: -24px;
+  color: #333;
+  font-size: 14px;
+}
+.adminform-control button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+.adminform-control button.learn-more {
+  width: 12rem;
+  height: auto;
+}
+.adminform-control button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+}
+.adminform-control button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+.adminform-control button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+.adminform-control button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+.adminform-control button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #282936;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+.adminform-control button:hover .circle {
+  width: 100%;
+}
+.adminform-control button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+}
+.adminform-control button:hover .button-text {
+  color: #fff;
+}

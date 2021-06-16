@@ -1,0 +1,127 @@
+.categoryContainer{
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    padding: 20px;
+    color: #49321c;
+    align-items: center;
+    font-family: 'Poppins';
+    background-color: #f1f2f3;
+    justify-content: space-between;
+    filter: drop-shadow(1px 1px 1px gray);
+}
+.categoryContainer h2 img{
+    width: 40px;
+}
+.menu img{
+    width: 50px;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+.categoryContainer select{
+    width: 150px;
+    outline: none;
+    cursor: pointer;
+    color: #333333;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-weight: bolder;
+    font-family: 'Poppins';
+    border: 3px solid #333;
+    background-color: transparent;
+    /* box-shadow: 0px 0px 5px gray inset; */
+}
+.cartContainer{
+    display: flex;
+    cursor: pointer;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.cartContainer img{
+    width: 30px;
+}
+.countItems{
+    margin: 5px; 
+    width: 24px; 
+    height: 24px; 
+    color: #999; 
+    color: black; 
+    color: white;
+    padding-top: 4px;
+    font-size: medium; 
+    text-align: center; 
+    font-family: Arial;
+    border-radius: 50%; 
+    font-weight: bolder; 
+    /* background-color: gold; */
+    /* background-color: teal;  */
+    background-color: #49321c;
+    /* background-image: linear-gradient( 109.6deg,  #4b1248 11.2%, #712424 91.1% ); */
+}
+
+.cartbox button{
+    outline: none;
+    cursor: pointer;
+    margin: 0px 10px;
+    color: #333333;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-family: 'Poppins';
+    border: none;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+.cartbox button img{
+    width: 35px;
+}
+/* responsive */
+
+@media screen and (max-width:500px) {
+    .categoryContainer h2{
+        font-size: 1.3rem !important;
+    }
+    .categoryContainer h2 img{
+        width: 30px;
+    }
+    .categoryContainer select{
+        width: 150px;
+        font-size: 1rem;
+    }
+    .cartContainer{
+        margin-left: 10px;
+    }
+    .cartContainer img{
+        width: 25px;
+    }
+    .countItems{ 
+        width: 20px; 
+        height: 20px; 
+        padding-top: 3px;
+        font-size: small; 
+    }
+}
+@media screen and (max-width:370px){
+    .categoryContainer{
+        flex-wrap: wrap;
+    }
+    .categoryContainer h2{
+        font-size: 1rem !important;
+    }
+    .categoryContainer select{
+        width: 132px;
+        font-size: small;
+    }
+    .cartContainer{
+        margin-left: 5px;
+    }
+}

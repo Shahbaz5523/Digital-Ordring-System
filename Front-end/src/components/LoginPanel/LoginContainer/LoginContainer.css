@@ -1,0 +1,14 @@
+.LoginContainer{
+    height: 100vh;
+    position: relative;
+    background-image: url('./4.1.jpg');
+    background-image: url('./4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.LoginContainer .filter{
+    width: 100%;
+    z-index: 111;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.219);
+}
